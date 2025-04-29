@@ -1,2 +1,7 @@
 def convert(str):
-    str.replace(":)", "")
+    return str.replace(":)", "🙂").replace(":(", "🙁")
+
+def main():
+    print(convert(input("Enter text: ")))
+
+main()
