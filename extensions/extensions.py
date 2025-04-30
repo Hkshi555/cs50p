@@ -1,5 +1,10 @@
 file_name = input("File name: ").lower().strip()
-suffix = file_name.rsplit(".", 1)[1]
+suffix = file_name.rsplit(".", 1)
+
+if len(suffix) > 1:
+    suffix = suffix[1]
+else:
+    print("application/octet-stream")
 
 
 dict = {
@@ -12,7 +17,7 @@ dict = {
     "zip": "application/zip",
 }
 
-if not dict.get(suffix) or not suffix:
+if not dict.get(suffix):
     print("application/octet-stream")
 
 else:
