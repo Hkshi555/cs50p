@@ -12,8 +12,9 @@ dict = {
     "zip": "application/zip",
 }
 
-if not dict.get(suffix):
+if not dict.get(suffix) or not suffix:
     print("application/octet-stream")
+elif 
 else:
     print(dict[suffix])
 
