@@ -2,6 +2,8 @@ file_name = input("File name: ").lower().strip()
 suffix = file_name.split(".")
 
 
+
+
 dict = {
     "gif": "image/gif",
     "jpg": "image/jpg",
