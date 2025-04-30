@@ -1,6 +1,8 @@
 file_name = input("File name: ").lower().strip()
 suffix = file_name.rsplit(".", 1)
 
+print(len(suffix))
+
 if len(suffix) <= 1:
     suffix = "EMPTY"
 
