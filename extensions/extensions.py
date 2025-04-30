@@ -1,7 +1,5 @@
 file_name = input("File name: ").lower().strip()
-suffix = file_name.split(".")
-
-
+suffix = file_name.rsplit(".", 1)[1]
 
 
 dict = {
