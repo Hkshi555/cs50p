@@ -4,7 +4,7 @@ suffix = file_name.rsplit(".", 1)[1]
 
 dict = {
     "gif": "image/gif",
-    "jpg": "image/jpg",
+    "jpg": "image/jpeg",
     "jpeg": "image/jpeg",
     "png": "image/png",
     "pdf": "application/pdf",
@@ -14,7 +14,7 @@ dict = {
 
 if not dict.get(suffix) or not suffix:
     print("application/octet-stream")
-elif 
+
 else:
     print(dict[suffix])
 
