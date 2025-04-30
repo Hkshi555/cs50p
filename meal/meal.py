@@ -3,7 +3,11 @@ def main():
 
 
 def convert(time):
+    hour = time.split(":")[0]
+    minutes = time.split(":")[1]
     
+
+    return float()
 
 
 if __name__ == "__main__":
